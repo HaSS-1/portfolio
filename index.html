@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hassan TAJIRI Portfolio</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <!--Bootstrap css-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--main css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="load()">
+    <!--navbar start-->
+    <nav class="navbar navbar-light fixed-top bg-light shadow-sm">
+        <div class="container-lg">
+            <a class="navbar-brand text-danger fw-bold fs-1" href="#">H.T</a>
+            <div class="dropdown">
+                <button class="btn btn-secondary btn-danger px-3 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#home">Accueil</a></li>
+                    <li><a class="dropdown-item" href="#about">A-propos</a></li>
+                    <li><a class="dropdown-item" href="#services">Services</a></li>
+                    <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+                    <li><a class="dropdown-item" href="#CV">CV</a></li>
+                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--navbar end-->
+
+    <!--Home section start-->
+    <section class="home py-5" id="home">
+
+        <div class="container-lg">
+            <div class="row  min-vh-100 align-items-center align-content-center">
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <div class="home-img text-center">
+                        <img src="img/profile.png" class="rounded-circle border border-5 mw-100" alt="photo de profile">
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+                    <div class="home-text">
+                        <p class="text-muted mb-1">Hello I'm </p>
+                        <h2 class="fs-4">Hassan TAJIRI</h2>
+                        <h1 class="text-danger fs-1 fw-bold">Web Developper</h1>
+                        <p class="mt-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tenetur consequuntur quam repellat. Est vitae doloremque sint quasi odio, hic molestias accusamus animi numquam, voluptates earum atque ducimus aliquam magni!</p>
+                        <a href="#Portfolio" class="btn btn-danger px-3 mt-3">My Work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Home section end-->
+    <!--A-propos start-->
+    <section class="about py-5" id="about">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5">A propos de Moi</2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <h3 class="fs-4 fw-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In incidunt et adipisci explicabo quibusdam magnam, repellendus enim sapiente minima corrupti voluptatum inventore, corporis expedita voluptatibus, reprehenderit rerum illo
+                            cum ipsa!</p>
+                    </div>
+
+                    <div class="row text-center text-uppercase my-3">
+                        <div class="col-sm-4">
+                            <div class="fact-item">
+                                <h4 class="fs-1 fw-bold" id="Cproject">20</h4>
+                                <p class="text-muted">projects completed</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="fact-item">
+                                <h4 class="fs-1 fw-bold" id="Hclients">35</h4>
+                                <p class="text-muted">Happy clients</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="fact-item">
+                                <h4 class="fs-1 fw-bold"><span id='Previews'>20</span>%</h4>
+                                <p class="text-muted">Positive Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 d-flex align-items-center">
+                            <a href="#" class="btn px-3 btn-danger me-5">Dwonload CV</a>
+                            <div class="social-links">
+                                <a href="#" class="text-dark fs-1 me-md-2"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="text-dark fs-1 me-md-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-dark fs-1 me-md-2"><i class="fab fa-github"></i></a>
+                                <a href="#" class="text-dark fs-1 me-md-2"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0" id="skills-item">
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">Javascript</h3>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" id="ProgressBar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" data-progress="20">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">Python</h3>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" data-progress="30">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">Css</h3>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" data-progress="70">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">Html</h3>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-progress="85">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">Bootstrap</h3>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" data-progress="90">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--A-propos section end-->
+
+    <!--Service section start-->
+    <section class="services" id="services">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5">What I can Do</2>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item border img-thumbnail shadow-sm p-4 rounded bg-white">
+                        <div class="icon my-3 text-danger fs-2">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="fs-5 py-2">Web Developpement</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item border img-thumbnail shadow-sm p-4 rounded bg-white">
+                        <div class="icon my-3 text-danger fs-2">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="fs-5 py-2">Creative Design</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item border img-thumbnail shadow-sm p-4 rounded bg-white">
+                        <div class="icon my-3 text-danger fs-2">
+                            <i class="fas fa-poll"></i>
+                        </div>
+                        <h3 class="fs-5 py-2">SEO Management</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--Service section end -->
+
+    <!--Portfolio section start -->
+    <section class="portfolio bg-white py-5" id="portfolio">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5">Latest works</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/1.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+                        <h3 class="text-capitalize fs-5 my-2">Team Section</h3>
+                        <p class="mb-4"><a href="#" class="text-decoration-none">Live Demo</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/2.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+                        <h3 class="text-capitalize fs-5 my-2">Landing Page</h3>
+                        <p class="mb-4"><a href="#" class="text-decoration-none">Live Demo</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/3.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+                        <h3 class="text-capitalize fs-5 my-2">Creative Team Section</h3>
+                        <p class="mb-4"><a href="#" class="text-decoration-none">Live Demo</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/4.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+                        <h3 class="text-capitalize fs-5 my-2">toggle pricing table</h3>
+                        <p class="mb-4"><a href="#" class="text-decoration-none">Live Demo</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/5.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+                        <h3 class="text-capitalize fs-5 my-2">Bootstrap 5 image gallery</h3>
+                        <p class="mb-4"><a href="#" class="text-decoration-none">Live Demo</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/6.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+                        <h3 class="text-capitalize fs-5 my-2">filterable image gallery</h3>
+                        <p class="mb-4"><a href="#" class="text-decoration-none">Live Demo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--Portfolio section end -->
+
+    <!--Freelancer avaliable section start -->
+    <section class="freelancer-available py-5 bg-danger">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p class="text-light fs-5">Do you have any project ?</p>
+                    <h2 class="fs-1 text-white mb-4">I'm Available For Freelancer Projects</h2>
+                    <a href="#contact" class="btn btn-outline-light">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Freelancer avaliable section end -->
+
+    <!--testimonials section start -->
+    <section id="testimonials" class="testimonials py-5">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5">testimonials</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active bg-danger" aria-current="true" aria-label="Slide 1"></button>
+                            <button class="bg-danger" type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button class="bg-danger" type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner p-1">
+                            <!--testi item start-->
+                            <div class="testi-item carousel-item active bg-white shadow-sm rounded p-4 mb-5">
+                                <div class="testi-author-info d-flex align-items-center">
+                                    <img src="img/testimonial/1.jpg" class="img-thumbnail rounded-circle" alt="author img">
+                                    <div class="author ms-3">
+                                        <h3 class="fs-6 mb-1">Paule Mc Artheur</h3>
+                                        <p class="text-muted m-0">SEO manager</p>
+                                    </div>
+                                </div>
+
+                                <p class="text-muted mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In incidunt et adipisci explicabo quibusdam magnam, repellendus enim sapiente minima corrupti</p>
+                                <div class="rating text-danger">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <!--testi item end-->
+                            <!--testi item start-->
+
+                            <div class="testi-item carousel-item bg-white shadow-sm rounded p-4 mb-5">
+                                <div class="testi-author-info d-flex align-items-center">
+                                    <img src="img/testimonial/2.jpg" class="img-thumbnail rounded-circle" alt="author img">
+                                    <div class="author ms-3">
+                                        <h3 class="fs-6 mb-1">Paule Mc Artheur</h3>
+                                        <p class="text-muted m-0">SEO manager</p>
+                                    </div>
+                                </div>
+
+                                <p class="text-muted mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In incidunt et adipisci explicabo quibusdam magnam, repellendus enim sapiente minima corrupti</p>
+                                <div class="rating text-danger">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <!--testi item end-->
+                            <!--testi item start-->
+                            <div class="testi-item carousel-item bg-white shadow-sm rounded p-4 mb-5">
+                                <div class="testi-author-info d-flex align-items-center">
+                                    <img src="img/testimonial/3.jpg" class="img-thumbnail rounded-circle" alt="author img">
+                                    <div class="author ms-3">
+                                        <h3 class="fs-6 mb-1">Paule Mc Artheur</h3>
+                                        <p class="text-muted m-0">SEO manager</p>
+                                    </div>
+                                </div>
+
+                                <p class="text-muted mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In incidunt et adipisci explicabo quibusdam magnam, repellendus enim sapiente minima corrupti</p>
+                                <div class="rating text-danger">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <!--testimonial item end-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact section start-->
+    <section class="contact py-5" id="contact">
+        <div class="container-lg  py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5">Contact</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5">Email</h3>
+                            <p class="text-muted">MyEmail@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5">Phone</h3>
+                            <p class="text-muted">+33 06 00 00 00 00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5">Visite Me</h3>
+                            <p class="text-muted">1 Street, Florange 57190</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-6 mb-4">
+                                    <input type="text" placeholder="Your Name" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <input type="email" placeholder="Your Email" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <input type="text" placeholder="Subject" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <textarea rows="5" placeholder="Your Message" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                    </textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button type="submit" class="btn btn-danger px-3">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact section end-->
+
+    <!--Footer section start-->
+    <footer class="footer border-top py-4">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="text-muted">&copy; 2021 TAJIRI Hassan</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer section end-->
+
+
+    <!--Bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--main js-->
+    <script src="/main.js"></script>
+</body>
+
+</html>
