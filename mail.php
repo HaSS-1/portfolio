@@ -12,6 +12,8 @@ $recipient = "tajiri.hassan@gmail.com";
 
 mail($recipient, $subject, $emailheader)
 
+or die("Error! OUPSS Somthing went wrong...");
+
 or die("Error!");
 
 $echo"message sent";
