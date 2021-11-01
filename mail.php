@@ -1,20 +1,37 @@
 <?php
 
+    if(isset($_POST['name']) && $_POST['email'] != ''){
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = $_POST['subject'];
-$^message = $_POST['message'];
+        if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ){
 
-$mailheader = "Form:".$name."<".email.">"\r\n";
+   
+                 //submit form
 
-$recipient = "tajiri.hassan@gmail.com";
+            $userName = $_POST['name'];
+            $userEmail = $_POST['email'];
+            $messageSubject = $_POST['subject'];
+            $message = $_POST['message'];
 
-mail($recipient, $subject, $emailheader)
+            $to = "tajiri.hassan@gmail.com";
+            $body = "";
 
-or die("Error! OUPSS Somthing went wrong...");
+            $body .= "Form:".$Nuserame. "\r\n";
+            $body = "Email:".$userEmail. "\r\n";
+            $body = "Message:".$Nuserame. "\r\n";
 
-$echo"message sent";
+            mail( $to,$messageSubject,$body);
+
+            $message_sent = true;
 
 
+            or die("Error! OUPSS Somthing went wrong...");
+
+            $echo"message sent";
+
+        }
+            else{
+            $message_sent = false;
+    }
+
+}
 ?>
