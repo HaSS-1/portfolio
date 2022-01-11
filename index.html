@@ -4,7 +4,7 @@
 <head>
     <title>Hassan TAJIRI Portfolio</title>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="shortcut icon" href="/img/fav.png">
     <!--Bootstrap css-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -15,20 +15,24 @@
 
 <body onload="load()">
     <!--navbar start-->
-    <nav class="navbar navbar-light fixed-top bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
         <div class="container-lg">
-            <a class="navbar-brand text-danger fw-bold fs-1" href="#">H.T</a>
-            <div class="dropdown">
-                <button class="btn btn-secondary btn-danger px-3 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="navbar-brand" href="index.html"><img src="/img/logo612x612.png" alt="H logo" width="70" height="60"></a>
+
+            <!-- <button class="navbar-toggler" type="button" id="dropdownMenuButton1" data-bs-toggle="collapse" aria-expanded="false">
         <i class="fas fa-bars"></i>
+      </button> -->
+            <button class="navbar-toggler btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#home">Accueil</a></li>
-                    <li><a class="dropdown-item" href="#about">A-propos</a></li>
-                    <li><a class="dropdown-item" href="#services">Services</a></li>
-                    <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
-                    <li><a class="dropdown-item" href="#CV">CV</a></li>
-                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">A-propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#CV">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -39,19 +43,19 @@
     <section class="home py-5" id="home">
 
         <div class="container-lg">
-            <div class="row  min-vh-100 align-items-center align-content-center">
+            <div class="row  min-vh-100 align-items-center align-content-center" id="welcome-section">
                 <div class="col-md-6 mt-5 mt-md-0">
                     <div class="home-img text-center">
-                        <img src="img/profile.png" class="rounded-circle border border-5 mw-100" alt="photo de profile">
+                        <img src="img/profile.png" class="rounded-circle border border-5 mw-100 shadow-lg" alt="photo de profile">
                     </div>
                 </div>
                 <div class="col-md-6 mt-5 mt-md-0 order-md-first">
-                    <div class="home-text">
-                        <p class="text-muted mb-1">Hello I'm </p>
-                        <h2 class="fs-4">Hassan TAJIRI</h2>
-                        <h1 class="text-danger fs-1 fw-bold">Web Developper</h1>
-                        <p class="mt-4 text-muted">En pleine reconversion professionnelle chez l'AFPA, je suis en formation pour apprendre le métier de Développeur Web et Web mobile depuis le 29 Novembre 2021 et se termine le 13 Mai 2022.</p>
-                        <a href="#Portfolio" class="btn btn-danger px-3 mt-3">My Work</a>
+                    <div class="home-tex">
+                        <p class="text-muted display-2 mb-1">Hello I'm </p>
+                        <h2 class="fs-2 ">Hassan TAJIRI</h2>
+                        <h1 class="p-lg-0 fw-bold text-danger" id="text3d">Web Developper</h1>
+                        <p class="mt-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tenetur consequuntur quam repellat. Est vitae doloremque sint quasi odio, hic molestias accusamus animi numquam, voluptates earum atque ducimus aliquam magni!</p>
+                        <a href="#Portfolio" class="btn btn-danger px-5 mt-3">My Work</a>
                     </div>
                 </div>
             </div>
@@ -72,9 +76,14 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="about-text">
-                        <h3 class="fs-4 fw-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In incidunt et adipisci explicabo quibusdam magnam, repellendus enim sapiente minima corrupti voluptatum inventore, corporis expedita voluptatibus, reprehenderit rerum illo
-                            cum ipsa!</p>
+                        <h3 class="fs-4 fw-bold">Mon profie en quelques mots. </h3>
+                        <p>Je suis en formation pour apprendre le métier de Développeur Web et Web mobile. Auparavant, j’ai effectué plusieurs années en tant que Receptionniste en Hotellerie, ce qui m’a permis d’acquérir de très bonnes compétences transversales
+                            telles que l’organisation, l’écoute, le conseil ainsi que des qualités relationnelles importantes. Passionné de la technologie de web et l'informatique, je possede une solide experience dans la mantenance informatique hardware/software,
+                            j'ai ainsi exercis comme technecien de support IT pendant 4ans en Freelane. J’ai profité de la situation de crise sanaitaire pour effectuer une reconversion professionnelle dans le Développement Web, domaine qui m’intéresse
+                            depuis de nombreuses années. C'est pour cette raison que j'ai inister mon temps libre a ame former et apprendre en autodedacte, J'ai alors suivé divers formations enligne et participé a des bootcamps axé sur le "Frontend web
+                            developement". j'essaie chaque jour d'enrichir mes connaissances et de les mettre en pratique. Le secteur et l'envie de se perfectionner m'ont tellement attiré que j'ai décidé de mener mon parcours professionnel dans cette
+                            direction. ce qui m'as poussé a m'inscrire dans la formation Développeur Web & Web Mobile au sein du l'AFPA de Frouard en vu de l’obtention d'un titre professionnelle de niveau 5, Bac+2 , Je continue donc dans cet axe avec
+                            envie, des idées plein la tête, et beaucoup d'ombetion et de motivation.</p>
                     </div>
 
                     <div class="row text-center text-uppercase my-3">
@@ -99,49 +108,58 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-12 d-flex align-items-center">
-                            <a href="#" class="btn px-3 btn-danger me-5">Dwonload CV</a>
+                            <a href="CV_TAJIRI_Hassan_DW_.pdf" class="btn btn-danger px-lg-4 me-5" download>Dwonload CV</a>
                             <div class="social-links">
-                                <a href="#" class="text-dark fs-1 me-md-2"><i class="fab fa-facebook"></i></a>
-                                <a href="#" class="text-dark fs-1 me-md-2"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="text-dark fs-1 me-md-2"><i class="fab fa-github"></i></a>
-                                <a href="#" class="text-dark fs-1 me-md-2"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.freecodecamp.org/hassan_tajiri" class="icon text-dark fs-1 me-md-3" target="_blank"><i class="fab fa-free-code-camp"></i></i></a>
+                                <a href="#" class="icon text-dark fs-1 me-md-3"><i class="fab fa-twitter"></i></a>
+                                <a href="https://github.com/HaSS-1" class="icon text-dark fs-1 me-md-3" id="profile-link" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/hassan-tajiri-84b7a5aa" class="icont text-dark fs-1 me-md-3" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="icon text-dark fs-1 me-md-3"><i class="fab fa-codepen"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 mt-5 mt-md-0" id="skills-item">
+                    <h3 class="fs-4 fw-bold">Mon profie en quelques mots. </h3>
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">php</h3>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" id="ProgressBar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" data-progress="15">
+                            </div>
+                        </div>
+                    </div>
                     <div class="skill-item mb-4">
                         <h3 class="fs-6">Javascript</h3>
                         <div class="progress" style="height: 10px;">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" id="ProgressBar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" data-progress="20">
+                            <div class="progress-bar" id="ProgressBar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" data-progress="20">
                             </div>
                         </div>
                     </div>
                     <div class="skill-item mb-4">
                         <h3 class="fs-6">Python</h3>
                         <div class="progress" style="height: 10px;">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" data-progress="30">
+                            <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" data-progress="30">
                             </div>
                         </div>
                     </div>
                     <div class="skill-item mb-4">
                         <h3 class="fs-6">Css</h3>
                         <div class="progress" style="height: 10px;">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" data-progress="70">
+                            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" data-progress="70">
                             </div>
                         </div>
                     </div>
                     <div class="skill-item mb-4">
                         <h3 class="fs-6">Html</h3>
                         <div class="progress" style="height: 10px;">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-progress="85">
+                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-progress="85">
                             </div>
                         </div>
                     </div>
                     <div class="skill-item mb-4">
                         <h3 class="fs-6">Bootstrap</h3>
                         <div class="progress" style="height: 10px;">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" data-progress="90">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" data-progress="90">
                             </div>
                         </div>
                     </div>
@@ -155,7 +173,7 @@
 
     <!--Service section start-->
     <section class="services" id="services">
-        <div class="container-lg py-4">
+        <div class="servicesoCntainer container-lg py-4 flex-wrap">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center">
@@ -163,90 +181,99 @@
                     </div>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="service-item border img-thumbnail shadow-sm p-4 rounded bg-white">
-                        <div class="icon my-3 text-danger fs-2">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3 class="fs-5 py-2">Web Developpement</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+            <div class="container servicesContainer container-md py-lg-5 d-flex justify-content-md-between">
+                <div class="serviceBox border img-thumbnail shadow-lg mx-2 p-5 py-lg-5 rounded">
+                    <div class="icon" style="--i: #ff867f">
+                        <i class="fab fa-sketch"></i>
+                    </div>
+                    <div class="content">
+                        <h2 class="h3">Creative Design</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="service-item border img-thumbnail shadow-sm p-4 rounded bg-white">
-                        <div class="icon my-3 text-danger fs-2">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <h3 class="fs-5 py-2">Creative Design</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="serviceBox border shadow-lg mx-2 p-4 rounded">
+                    <div class="icon" style="--i: #4eb7ff">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="content">
+                        <h2 class="h3">Web Developpement</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="service-item border img-thumbnail shadow-sm p-4 rounded bg-white">
-                        <div class="icon my-3 text-danger fs-2">
-                            <i class="fas fa-poll"></i>
-                        </div>
-                        <h3 class="fs-5 py-2">SEO Management</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+                <div class="serviceBox border img-thumbnail shadow-lg mx-2 p-4 rounded">
+                    <div class="icon" style="--i: #c50e29">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="content">
+                        <h2 class="h3">Digital Marketing</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
                     </div>
                 </div>
 
             </div>
-        </div>
+
 
     </section>
+    </div>
     <!--Service section end -->
 
     <!--Portfolio section start -->
     <section class="portfolio bg-white py-5" id="portfolio">
-        <div class="container-lg py-4">
+        <div class="container-lg py-4" id="projects">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center">
-                        <h2 class="fw-bold mb-5">Latest works</h2>
+                        <h2 class="fw-bold mb-xl-5">Latest works</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <img src="img/portfolio/1.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+                    <div class="portfolio-item project-tile">
+                        <img src="img/portfolio/1.jpg" class="img_ w-100 img-thumbnail" alt="portfolio item">
                         <h3 class="text-capitalize fs-5 my-2">Team Section</h3>
                         <p class="mb-4"><a href="#" class="text-decoration-none">Live Demo</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="portfolio-item">
-                        <img src="img/portfolio/2.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+                        <img src="img/portfolio/2.jpg" class="img_ w-100 img-thumbnail" alt="portfolio item">
                         <h3 class="text-capitalize fs-5 my-2">Landing Page</h3>
                         <p class="mb-4"><a href="#" class="text-decoration-none">Live Demo</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="portfolio-item">
-                        <img src="img/portfolio/3.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+                        <img src="img/portfolio/3.jpg" class="img_ w-100 img-thumbnail" alt="portfolio item">
                         <h3 class="text-capitalize fs-5 my-2">Creative Team Section</h3>
                         <p class="mb-4"><a href="#" class="text-decoration-none">Live Demo</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="portfolio-item">
-                        <img src="img/portfolio/4.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+                        <img src="img/portfolio/4.jpg" class="img_ w-100 img-thumbnail" alt="portfolio item">
                         <h3 class="text-capitalize fs-5 my-2">toggle pricing table</h3>
                         <p class="mb-4"><a href="#" class="text-decoration-none">Live Demo</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="portfolio-item">
-                        <img src="img/portfolio/5.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+                        <img src="img/portfolio/5.jpg" class="img_ w-100 img-thumbnail" alt="portfolio item">
                         <h3 class="text-capitalize fs-5 my-2">Bootstrap 5 image gallery</h3>
                         <p class="mb-4"><a href="#" class="text-decoration-none">Live Demo</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="portfolio-item">
-                        <img src="img/portfolio/6.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+                        <img src="img/portfolio/6.jpg" class="img_ w-100 img-thumbnail" alt="portfolio item">
                         <h3 class="text-capitalize fs-5 my-2">filterable image gallery</h3>
                         <p class="mb-4"><a href="#" class="text-decoration-none">Live Demo</a></p>
                     </div>
@@ -264,7 +291,7 @@
                 <div class="col-lg-8 text-center">
                     <p class="text-light fs-5">Do you have any project ?</p>
                     <h2 class="fs-1 text-white mb-4">I'm Available For Freelancer Projects</h2>
-                    <a href="#contact" class="btn btn-outline-light">Hire Me</a>
+                    <a href="#contact" class="hire_me btn btn-outline-light px-lg-5">Hire Me</a>
                 </div>
             </div>
         </div>
@@ -277,7 +304,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center">
-                        <h2 class="fw-bold mb-5">testimonials</h2>
+                        <h2 class="fw-bold mb-5">Testimonials</h2>
                     </div>
                 </div>
             </div>
@@ -359,7 +386,87 @@
             </div>
         </div>
     </section>
-
+    <!--time line start-->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">Ajmal, I need help to learn how to tweak this part. I don't want this timeline crap. Haha.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="text-muted">2009-2011</h4>
+                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="bg-danger img-circle img-responsive" src="" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="text-muted">March 2011</h4>
+                                    <h4 class="subheading">An Agency is Born</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="text-muted">December 2012</h4>
+                                    <h4 class="subheading">Transition to Full Service</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="text-muted">July 2014</h4>
+                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Be Part
+                                    <br>Of Our
+                                    <br>Story!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--time line end-->
     <!--contact section start-->
     <section class="contact py-5" id="contact">
         <div class="container-lg  py-4">
@@ -378,7 +485,7 @@
                         </div>
                         <div class="text ms-3">
                             <h3 class="fs-5">Email</h3>
-                            <p class="text-muted">MyEmail@gmail.com</p>
+                            <p class="text-muted"><a href="mailto:tajiri.hassan@gmail.com">tajiri.hassan@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item d-flex mb-3">
@@ -387,7 +494,7 @@
                         </div>
                         <div class="text ms-3">
                             <h3 class="fs-5">Phone</h3>
-                            <p class="text-muted">+33 06 00 00 00 00</p>
+                            <p class="text-muted"><a href="tel:+33695090625">+33695090625</a></p>
                         </div>
                     </div>
                     <div class="contact-item d-flex mb-3">
@@ -396,7 +503,7 @@
                         </div>
                         <div class="text ms-3">
                             <h3 class="fs-5">Visite Me</h3>
-                            <p class="text-muted">1 Street, Florange 57190</p>
+                            <p class="text-muted">17 Rue de Provence <br> 57190 Florange</p>
                         </div>
                     </div>
                 </div>
@@ -436,7 +543,7 @@
     <!--contact section end-->
 
     <!--Footer section start-->
-    <footer class="footer border-top py-4">
+    <footer class="footer bg-dark border-top py-4">
         <div class="container-lg">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -446,6 +553,7 @@
         </div>
     </footer>
     <!--Footer section end-->
+
 
 
     <!--Bootstrap js-->
