@@ -19,13 +19,7 @@
             $body = "Email:".$userEmail. "\r\n";
             $body = "Message:".$Nuserame. "\r\n";
 
-<<<<<<< HEAD
             mail( $to,$messageSubject,$body);
-=======
-or die("Error!");
-
-$echo"message sent";
->>>>>>> 17cca83e85d8c5c04d0699eeebefc5d3b0ea61b6
 
             $message_sent = true;
 
